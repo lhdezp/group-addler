@@ -1,13 +1,25 @@
 [project]
 name = "group-addler"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "Desktop tool to copy members between WhatsApp groups"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "flet>=0.84.0",
-    "flet-cli>=0.84.0",
     "flet-desktop>=0.84.0",
-    "pyinstaller>=6.21.0",
-    "wpp-whatsapp>=1.0.0",
+    "neonize>=0.12.4",
+    "segno>=1.6.1",
 ]
+
+[dependency-groups]
+dev = [
+    "flet-cli>=0.84.0",
+    "pyinstaller>=6.21.0",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["group_addler"]

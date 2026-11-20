@@ -1,14 +1,42 @@
 # Python-generated files
 __pycache__/
 *.py[oc]
+*.egg-info
+*.egg
 build/
 dist/
 wheels/
-*.egg-info
 
 # Virtual environments
-.venv
+.venv/
+venv/
+activate/
+
+# Local tooling and caches
+.atl/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
 
 # Build artifacts
 *.spec
-tokens/*
+tokens/
+
+# WhatsApp credentials and session data - never commit
+whatsapp_session
+whatsapp_session.*
+whatsapp_session-*
+
+# Logs
+*.log

@@ -27,7 +27,6 @@ if exist "dist\GroupAddler\GroupAddler.exe" (
     echo.
     echo   Copia toda la carpeta "GroupAddler" a
     echo   la maquina destino.
-    echo   Requiere Microsoft Edge (Win 11).
     echo ============================================
 ) else (
     echo ERROR: No se encontro el exe en dist\
