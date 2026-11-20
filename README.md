@@ -97,6 +97,33 @@ Agregar miembros de forma masiva puede infringir las políticas de WhatsApp y
 provocar restricciones o bloqueos de la cuenta. Usá la herramienta con grupos
 propios y de forma moderada.
 
+## Descargo de responsabilidad
+
+Este proyecto se distribuye con fines educativos y de automatización personal,
+**tal cual está** ("as is"), sin garantías de ningún tipo, expresas ni implícitas,
+incluyendo —sin limitarse a— garantías de funcionamiento, disponibilidad,
+idoneidad para un fin particular o ausencia de errores.
+
+El desarrollador **no se hace responsable** de:
+
+- El uso que se le dé a la herramienta ni de las acciones que se ejecuten con
+  ella.
+- Las consecuencias derivadas de ese uso, incluyendo restricciones temporales,
+  suspensiones o el **bloqueo permanente de la cuenta de WhatsApp**.
+- Incumplimientos de los Términos de Servicio de WhatsApp, de las políticas de
+  Meta o de cualquier ley o normativa aplicable en la jurisdicción del usuario.
+- La pérdida, filtración o uso indebido de la sesión, credenciales, contactos,
+  mensajes o cualquier dato almacenado o procesado por la herramienta.
+- Daños directos, indirectos, incidentales, especiales o consecuentes de
+  cualquier naturaleza derivados del uso o de la imposibilidad de usar el
+  software.
+- El uso de la herramienta con cuentas, grupos o datos de terceros sin el
+  consentimiento correspondiente.
+
+Al descargar, compilar, ejecutar o utilizar esta herramienta, **asumís toda la
+responsabilidad** por los resultados y aceptás que lo hacés bajo tu propio
+riesgo. Si no estás de acuerdo con estos términos, no uses el software.
+
 ## Estructura
 
 ```
