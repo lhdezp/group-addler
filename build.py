@@ -91,8 +91,7 @@ def main() -> int:
         hook_config.temp_bin_dir = copy_flet_bin()
         if hook_config.temp_bin_dir:
             fletd_path = os.path.join(hook_config.temp_bin_dir, "fletd.exe")
-            if os.path.exists(fletd_path):
-                os.remove(fletd_path)
+            # Removed the os.remove(fletd_path) line as it was causing the app to fail because it couldn't find the flet server binary
             print(f"  Copied to temp: {hook_config.temp_bin_dir}")
     else:
         print("  Warning: Flet desktop binaries not found, continuing anyway...")
@@ -126,6 +125,9 @@ def main() -> int:
         pyi_args.extend(["--add-data", f"{source};{destination}"])
     for module in hidden_imports:
         pyi_args.extend(["--hidden-import", module])
+
+    if hook_config.temp_bin_dir:
+        pyi_args.extend(["--add-data", f"{hook_config.temp_bin_dir};."])
 
     print(f"  PyInstaller args count: {len(pyi_args)}")
     print("  Building: main.py -> GroupAddler.exe")
